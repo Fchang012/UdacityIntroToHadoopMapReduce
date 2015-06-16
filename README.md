@@ -25,6 +25,12 @@ There are 2 files in the dataset. The first is "forum_nodes.tsv", and that conta
 
 The second table is "forum_users.tsv". It contains fields for "user_ptr_id" - the id of the user. "reputation" - the reputation, or karma of the user, earned when other users upvote their posts, and the number of "gold", "silver" and "bronze" badges earned. The actual database has more fields in this table, like user name nickname, bio (if set) etc, but we have removed this information here.
  
+## Quick Explanation of Each Exercise:
+- Study Groups Exercise: For each forum thread (that is a question node with all it's answers and comments) the Mapper and Reducer gives us a list of students that have posted there - either asked the question, answered a question or added a comment. If a student posted to that thread several times, they are added to that list several times to indicate intensity of communication.
+- Student Times Exercise: Finds for each student what hour of the day the student has posted the most posts.
+- Post and Answer Length Exercise: Processes the forum_node data and outputs the length of the post and the average answer (just answer, not comment) length for each post.
+- Top Tags Exercise: Outputs the Top 10 tags, ordered by the number of questions they appear in.
+
 ## Files
 The following files are the Mappers and Reducers required for each part of the project:
 - study_groups_mapper.py       [Study Groups Exercise]
