@@ -21,7 +21,9 @@ There are 2 files in the dataset. The first is "forum_nodes.tsv", and that conta
 - "parent_id": node under which the post is located, will be empty for "questions"
 - "abs_parent_id": top node where the post is located
 - "added_at": date added
-- The second table is "forum_users.tsv". It contains fields for "user_ptr_id" - the id of the user. "reputation" - the reputation, or karma of the user, earned when other users upvote their posts, and the number of "gold", "silver" and "bronze" badges earned. The actual database has more fields in this table, like user name nickname, bio (if set) etc, but we have removed this information here.
+
+
+The second table is "forum_users.tsv". It contains fields for "user_ptr_id" - the id of the user. "reputation" - the reputation, or karma of the user, earned when other users upvote their posts, and the number of "gold", "silver" and "bronze" badges earned. The actual database has more fields in this table, like user name nickname, bio (if set) etc, but we have removed this information here.
  
 ## Files
 The following files are the Mappers and Reducers required for each part of the project:
