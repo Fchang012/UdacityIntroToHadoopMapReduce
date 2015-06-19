@@ -10,7 +10,7 @@ def reducer():
 	hourList = [0] * 24
 	lastPoster = None	
 	
-	print "Poster:", "\t", "Hour Most Active:"
+	print "Student ID|", "\t", "Hour:"
 	
 	for line in reader:
 		#error checking incase something went wrong
@@ -36,8 +36,9 @@ def reducer():
 	#deals with last record
 	if lastPoster != None:
 		maxVal = max(hourList)
-		hours = [index for index, val in enumerate(hourList) if val == maxVal]		
-		sys.stdout.write(str(lastPoster) + "\t" + str(hours[i]) + "\n")
+		hours = [index for index, val in enumerate(hourList) if val == maxVal]
+		for i in range(len(hours[:])):		
+			sys.stdout.write(str(lastPoster) + "\t" + str(hours[i]) + "\n")
 
 
 
@@ -45,4 +46,3 @@ def reducer():
 
 if __name__ == "__main__":
 	reducer()
-
